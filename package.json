@@ -1,0 +1,60 @@
+{
+  "name": "TESTfulAPIs",
+  "version": "1.0.0",
+  "description": "TESTful APIs",
+  "main": "server/server.js",
+  "scripts": {
+    "test": "mocha -R spec server/test",
+    "start": "node ."
+  },
+  "dependencies": {
+    "async": "~0.9.0",
+    "compression": "^1.0.3",
+    "connect-ensure-login": "^0.1.1",
+    "cors": "^2.7.1",
+    "errorhandler": "^1.1.1",
+    "eslint": "4.0.0",
+    "express-flash": "0.0.2",
+    "formidable": "^1.1.1",
+    "function-rate-limit": "~0.0.1",
+    "istanbul": "^0.4.5",
+    "loopback": "^2.22.0",
+    "loopback-boot": "^2.12.1",
+    "loopback-component-explorer": "^2.1.0",
+    "loopback-component-passport": "^3.3.0",
+    "loopback-connector-dashdb": "^2.0.0",
+    "loopback-connector-rest": "^1.1.4",
+    "loopback-datasource-juggler": "^2.0.0",
+    "loopback-passport": "^1.0.2",
+    "mkdirp": "^0.5.1",
+    "mocha": "^1.20.1",
+    "multer": "^1.3.0",
+    "newrelic": "^1.40.0",
+    "passport-twitter": "^1.0.4",
+    "pkgcloud": "^1.4.0",
+    "request": "^2.37.0",
+    "serve-static": "^1.10.0",
+    "shuffle": "~0.2.1",
+    "strong-start": "~1.3.2",
+    "supertest": "^0.13.0",
+    "text-table": "~0.2.0",
+    "weighted": "~0.2.2"
+  },
+  "optionalDependencies": {
+    "loopback-connector-mongodb": "^1.2.5"
+  },
+  "devDependencies": {
+    "istanbul": "^0.4.5",
+    "mocha-junit-reporter": "^1.13.0"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git@github.com:DhruboB/testfulapis.git"
+  },
+  "engines": {
+    "node": "6.10.2",
+    "npm": "3.10.10"
+  },
+  "author": "A Team",
+  "license": "MIT"
+}

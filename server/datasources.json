@@ -1,0 +1,15 @@
+{
+  "db": {
+    "name": "db",
+    "connector": "memory"
+  },
+  "dashdb": {
+    "port": 50000,
+    "database": "BLUDB",
+    "username": "dash111823",
+    "password": "e0f88c7a64d4",
+    "name": "dashdb",
+    "connector": "dashdb",
+    "hostname": "awh-yp-small03.services.dal.bluemix.net"
+  }
+}

@@ -1,0 +1,53 @@
+{
+  "name": "TEST_REGISTRATION_PROFILE",
+  "base": "PersistedModel",
+  "idInjection": false,
+  "options": {
+    "validateUpsert": true
+  },
+  "properties": {
+    "TEST_ID": {
+      "type": "number",
+      "id": true,
+      "required": true
+    },
+    "USER_FIRST_NAME": {
+      "type": "string",
+      "required": false
+    },
+    "USER_LAST_NAME": {
+      "type": "string",
+      "required": false
+    },
+    "MOBILE": {
+      "type": "number",
+      "required": false
+    },
+    "EMAIL": {
+      "type": "string",
+      "required": false
+    },
+    "DATE_OF_BIRTH": {
+      "type": "date",
+      "required": false
+    },
+    "VALID_FROM": {
+      "type": "date",
+      "required": false
+    },
+    "VALID_TO": {
+      "type": "date",
+      "required": false
+    }
+  },
+  "validations": [],
+  "relations": {
+    "performer_affinity": {
+      "type": "hasMany",
+      "model": "PERFORMER_AFFINITY",
+      "foreignKey": "TEST_ID"
+    }
+  },
+  "acls": [],
+  "methods": {}
+}

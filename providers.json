@@ -1,0 +1,48 @@
+{
+
+     "twitter-login": {
+    "provider": "twitter",
+    "module": "passport-twitter",
+    "authScheme": "oauth",  
+    "callbackURL": "http://127.0.0.1:3000/auth/twitter/callback",
+    "authPath": "/auth/twitter",
+    "callbackPath": "/auth/twitter/callback",
+    "successRedirect": "/auth/account",
+    "failureRedirect": "/login",  
+    "consumerKey": "",
+    "consumerSecret": "",
+    "setAccessToken": true,
+    "scope": ["email", "user_likes","url","profile"],
+    "emailAsUserEmail": true,
+    "emailAsUsername": true,
+    "addInProfiles": {
+      "profileField": "_json"
+    },
+    "addConstants": {
+      "status": {
+        "passwordSet": false,
+        "emailVerified": false,
+        "mobileNoVerified": false,
+        "donation": false
+      }
+    },
+    "failureFlash": true
+  },
+ "twitter-link": {
+    "provider": "twitter",
+    "module": "passport-twitter",
+    "consumerKey": "",
+    "consumerSecret": "",
+    "callbackURL": "/link/twitter/callback",
+    "authPath": "/link/twitter",
+    "callbackPath": "/link/twitter/callback",
+    "successRedirect": "/users/fbConnect",
+    "failureRedirect": "/users/loginFailure",
+    "setAccessToken": true,
+    "scope": [
+      "email"
+    ],
+    "link": true,
+    "failureFlash": true
+  }
+}

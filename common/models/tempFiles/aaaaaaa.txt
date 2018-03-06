@@ -1,0 +1,35 @@
+npm test ./node_modules/mocha/bin/mocha ./unitTesting/testing.js --reporter mocha-junit-reporter
+//.....................................
+
+mocha test --reporter mocha-junit-reporter --reporter-options mochaFile=./file.xml
+
+//
+
+//..........................
+./node_modules/mocha/bin/mocha ./unitTesting/testing.js test --reporter mocha-junit-reporter
+
+=========================================================
+    "test": "./node_modules/mocha/bin/mocha ./unitTesting/testing.js --reporter mocha-junit-reporter --reporter-options mochaFile=./coverage/file.xml"
+
+================================================
+MOCHA_FILE=./coverage/file.xml npm test --reporter mocha-junit-reporter
+npm test --reporter mocha-junit-reporter --reporter-options mochaFile=./covarage/file.xml
+===============================
+Final:
+
+$ ./node_modules/mocha/bin/mocha ./Test/testing.js --reporter mocha-junit-reporter --reporter-options mochaFile=./covarage/file.xml
+
+
+
+
+node_modules/mocha/bin/mocha -R spec server/test mocha test --reporter mocha-junit-reporter --reporter-options mochaFile=./kiran/file.xm
+--------------------------------------------------------------------------------
+ test node_modules/mocha/bin/mocha --reporter mocha-junit-reporter --reporter-options mochaFile=./kiran/file.xml
+
+==========================++++++++++++++++++++++====================================
+
+npm test -- --reporter mocha-junit-reporter --reporter-options mochaFile=./aaaaa/file.xml
+
+======================++++++++++++++++++++++============================
+./node_modules/.bin/istanbul cover --dir ./ajay node_modules/.bin/_mocha -- -- -u exports -R spec server/test/**/*
+

@@ -1,0 +1,31 @@
+{
+  "name": "DATA_CLASS",
+  "base": "PersistedModel",
+  "idInjection": true,
+  "options": {
+    "validateUpsert": true
+  },
+  "properties": {
+    "DATA_CLASS_ID": {
+      "type": "number",
+      "id": true,
+      "required": true
+    },
+    "DATA_CLASS_NAME": {
+      "type": "string",
+      "required": false
+    },
+    "DATA_CLASS_DESCRIPTION": {
+      "type": "string",
+      "required": false
+    },
+    "PARENT_DATA_CLASS_ID": {
+      "type": "number",
+      "required": false
+    }
+  },
+  "validations": [],
+  "relations": {},
+  "acls": [],
+  "methods": {}
+}

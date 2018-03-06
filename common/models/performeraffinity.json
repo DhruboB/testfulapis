@@ -1,0 +1,46 @@
+{
+  "name": "PERFORMER_AFFINITY",
+  "base": "PersistedModel",
+  "idInjection": false,
+  "options": {
+    "validateUpsert": true
+  },
+  "properties": {
+    "TEST_ID": {
+      "type": "number",
+      "id": 1,
+      "required": true
+    },
+    "PERFORMER_CD": {
+      "type": "string",
+      "id": 2,
+      "required": true
+    },
+    "DATA_CLASS_ID": {
+      "type": "string",
+      "id": 3,
+      "required": true
+    },
+    "RUN_DATE": {
+      "type": "Date",
+      "id": 4,
+      "required": true
+    },
+    "FROM_DATE": {
+      "type": "Date",
+      "required": false
+    },
+    "TO_DATE": {
+      "type": "Date",
+      "required": false
+    },
+    "WEIGHTAGE": {
+      "type": "number",
+      "required": false
+    }
+  },
+  "validations": [],
+  "relations": {},
+  "acls": [],
+  "methods": {}
+}
